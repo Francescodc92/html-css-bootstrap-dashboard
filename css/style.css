@@ -33,6 +33,7 @@ main{
 
 main{
   background-color: #f8f9fa;
+  overflow-y: auto;
 }
 
 main .header-main a{
