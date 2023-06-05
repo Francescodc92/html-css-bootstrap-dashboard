@@ -1,0 +1,12 @@
+.debug header .container{
+  border: 1px solid black;
+}
+
+.debug header .row{
+  border: 1px solid red;
+}
+
+.debug header .row > *{
+  background-color: aqua;
+  border: 1px solid green;
+}

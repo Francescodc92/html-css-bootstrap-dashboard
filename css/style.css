@@ -1,1 +1,13 @@
 @import url(./debug.css);
+
+:root{
+  --header-height:3.75rem;
+}
+
+header{
+  height: var(--header-height);
+}
+
+header .dropdown .dropdown-toggle::after{
+  display: none;
+}
