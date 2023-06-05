@@ -4,10 +4,37 @@
   --header-height:3.75rem;
 }
 
+/*----------
+Header
+-----------*/
+
 header{
   height: var(--header-height);
 }
 
 header .dropdown .dropdown-toggle::after{
   display: none;
+}
+
+/*----------
+Aside
+-----------*/
+aside{
+   background-image: url('../img/sidebar-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+aside,
+main{
+  height: calc(100vh - var(--header-height));
+}
+
+main{
+  background-color: #f8f9fa;
+}
+
+main .header-main a{
+  background-color:#165bba ;
 }

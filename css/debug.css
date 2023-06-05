@@ -10,3 +10,15 @@
   background-color: aqua;
   border: 1px solid green;
 }
+
+
+.debug aside, .debug main {
+
+  border: 1px solid rgb(2, 0, 128);
+}
+
+.debug main .header-main .row > * {
+  border: 1px solid rgb(2, 0, 128);
+  padding-block: 1.25rem;
+}
+
