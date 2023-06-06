@@ -16,6 +16,13 @@ header .dropdown .dropdown-toggle::after{
   display: none;
 }
 
+/*-----------
+Utilis
+------------*/
+.w-table{
+  width: 6.25rem;
+}
+
 /*----------
 Aside
 -----------*/
@@ -38,4 +45,14 @@ main{
 
 main .header-main a{
   background-color:#165bba ;
+}
+
+.main-cards .table a{
+  transition: background-color 200ms ease-in-out,
+              color 200ms ease-in-out;
+}
+
+.main-cards .table a:hover{
+  background-color: rgb(108,117,125);
+  color: #fff;
 }
