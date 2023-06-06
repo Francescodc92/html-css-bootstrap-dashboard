@@ -1,58 +1,80 @@
 @import url(./debug.css);
 
-:root{
-  --header-height:3.75rem;
+:root {
+  --header-height: 3.75rem;
 }
 
 /*----------
 Header
 -----------*/
 
-header{
+header {
   height: var(--header-height);
 }
 
-header .dropdown .dropdown-toggle::after{
+header .dropdown .dropdown-toggle::after {
   display: none;
 }
 
 /*-----------
 Utilis
 ------------*/
-.w-table{
+.w-table {
   width: 6.25rem;
+}
+
+.logo-wrapper {
+  height: var(--header-height);
+}
+
+.logo-wrapper img.logo-mobile {
+  max-height: 100%;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.input-search {
+  padding-left: 1.875rem;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  transform: translateY(-50%);
 }
 
 /*----------
 Aside
 -----------*/
-aside{
-   background-image: url('../img/sidebar-bg.png');
+aside {
+  background-image: url("../img/sidebar-bg.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 aside,
-main{
+main {
   height: calc(100vh - var(--header-height));
 }
 
-main{
+main {
   background-color: #f8f9fa;
   overflow-y: auto;
 }
 
-main .header-main a{
-  background-color:#165bba ;
+main .header-main a {
+  background-color: #165bba;
 }
 
-.main-cards .table a{
-  transition: background-color 200ms ease-in-out,
-              color 200ms ease-in-out;
+.main-cards .table a {
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 
-.main-cards .table a:hover{
-  background-color: rgb(108,117,125);
+.main-cards .table a:hover {
+  background-color: rgb(108, 117, 125);
   color: #fff;
 }
