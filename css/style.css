@@ -46,6 +46,10 @@ Utilis
   transform: translateY(-50%);
 }
 
+.ms-fs-cards {
+  font-size: 0.875rem;
+}
+
 /*----------
 Aside
 -----------*/
@@ -57,24 +61,56 @@ aside {
 }
 
 aside,
-main {
+.section-main {
   height: calc(100vh - var(--header-height));
 }
 
-main {
+.section-main {
   background-color: #f8f9fa;
   overflow-y: auto;
+  padding-bottom: 1.25rem;
 }
 
-main .header-main a {
+main aside nav ul li {
+  transition: background-color 200ms ease-in-out;
+  width: 100%;
+}
+
+main aside nav ul li:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.section-main .header-main a {
   background-color: #165bba;
 }
 
 .main-cards .table a {
-  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.main-cards .table a i {
+  transition: color 200ms ease-in-out;
 }
 
 .main-cards .table a:hover {
   background-color: rgb(108, 117, 125);
+}
+
+.main-cards .table a:hover i {
   color: #fff;
+}
+
+.main-cards .table tbody tr {
+  vertical-align: middle;
+}
+
+.main-cards .table .ms-name-col i {
+  background-color: #f26551;
+}
+
+.main-cards .table .buttons-action a.btn {
+  width: 1.875rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  vertical-align: middle;
 }
