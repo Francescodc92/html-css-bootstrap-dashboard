@@ -65,10 +65,33 @@ aside,
   height: calc(100vh - var(--header-height));
 }
 
+.ms-btn-hover {
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.section-main .header-main a.ms-btn-hover {
+  background-color: #165bba;
+  transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.ms-btn-hover:hover,
+.section-main .header-main a.ms-btn-hover:hover {
+  background-color: #fff;
+  color: #165bba;
+}
+
 .section-main {
   background-color: #f8f9fa;
   overflow-y: auto;
   padding-bottom: 1.25rem;
+}
+
+.section-main .header-main .offcanvas {
+  width: 100%;
+}
+
+.section-main .header-main .offcanvas .ms-form-width {
+  width: 100%;
 }
 
 main aside nav ul li {
@@ -78,10 +101,6 @@ main aside nav ul li {
 
 main aside nav ul li:hover {
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-.section-main .header-main a {
-  background-color: #165bba;
 }
 
 .main-cards .table a {
@@ -113,4 +132,15 @@ main aside nav ul li:hover {
   height: 1.875rem;
   line-height: 1.875rem;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 992px) {
+  .section-main .header-main .offcanvas {
+    width: 50vw;
+    max-width: 43.75rem;
+  }
+
+  .section-main .header-main .offcanvas .ms-form-width {
+    width: 50%;
+  }
 }
