@@ -119,6 +119,14 @@ main aside nav ul li:hover {
   color: #fff;
 }
 
+.main-cards .classes .table tr th:not(:first-of-type) {
+  text-align: center;
+}
+
+.main-cards .classes .table tr td:not(:first-of-type) {
+  text-align: center;
+}
+
 .main-cards .table tbody tr {
   vertical-align: middle;
 }
